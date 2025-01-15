@@ -1,34 +1,28 @@
 # mo-parsec
-
 A Parsec based parser combinator library for Motoko.
 
 This is a minimal parsec implementation based directly on a port, from OCaml, of
 [Opal](0), which is itself derived from Haskell's influential [Parsec](1) library.
 
 The library and example was implemented primarily to exercise Motoko new type argument inference, but may be of more general use.
-
 * [src](src) contains the [`Parsec`](src/Parsec.mo) library.
 * [test](test) contains a sample lambda calculus lexer and parser that you can run with wasmtime.
 
 ## API Documentation
-
 API documentation for this library can be found at  https://crusso.github.io/mo-parsec/.
 
 
 ## Testing
-
 ```bash
 make test
 ```
 
 ## Example
-
 ```bash
 make example
 ```
 
 ## Documentation
-
 There is currently no documentation, but see
 Opal's [README](https://github.com/pyrocat101/opal/README.md) for a good overview of the available combinators, whose names
 and types are largely preserved (modulo naming conventions and uncurrying).
@@ -50,17 +44,13 @@ take Motoko immutable arrays instead (e.g. `choice`).
 
 
 ## Disclaimer
-
 The library is not well-tested, use at your own risk.
 
 ## References & Credits
-
 [0] https://github.com/pyrocat101/opal
-
 [1] https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/parsec-paper-letter.pdf
 
 Thanks to Christoph Hegemann for the lambda calculus sample and feedback.
-
 ## API
 
 ```swift
